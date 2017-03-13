@@ -12,9 +12,16 @@
     "fancyBox": "^3.0.39"
   },
   "overrides": {
+    "flickity": {
+      "main": [
+        "./dist/flickity.css",
+        "./dist/flickity.pkgd.js"
+      ]
+    },
     "fancyBox": {
       "main": [
-        "./dist/jquery.fancybox.css"
+        "./dist/jquery.fancybox.css",
+        "./dist/jquery.fancybox.js"
       ]
     },
     "bootstrap-sass": {
