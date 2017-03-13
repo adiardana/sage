@@ -17,8 +17,8 @@
         "scripts/customizer.js"
       ]
     },
-    "jquery.js": {
-      "bower": ["jquery", "flickity"]
+    "lib.js": {
+      "bower": ["flickity", "fancyBox"]
     }
   },
   "config": {

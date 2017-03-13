@@ -8,9 +8,15 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "3.3.6",
-    "flickity": "^2.0.5"
+    "flickity": "^2.0.5",
+    "fancyBox": "^3.0.39"
   },
   "overrides": {
+    "fancyBox": {
+      "main": [
+        "./dist/jquery.fancybox.css"
+      ]
+    },
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",
