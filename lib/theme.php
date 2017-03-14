@@ -1,5 +1,5 @@
 <?php
-namespace Sage\Frontend;
+namespace Sage\Theme;
 
 function get_featured_image($id = false, $size = 'full') {
   // if there is no id
@@ -24,5 +24,5 @@ function get_featured_image($id = false, $size = 'full') {
   $image = wp_get_attachment_image_url( get_post_thumbnail_id($post_id), $size );
 
   return $image;
-  
+
 }

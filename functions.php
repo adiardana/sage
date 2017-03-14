@@ -17,7 +17,7 @@ $sage_includes = [
   'lib/wrapper.php',      // Theme wrapper class
   'lib/customizer.php',   // Theme customizer
   'lib/navwalker.php',    // Menu navwalker
-  'lib/frontend.php'      // Frontend functions
+  'lib/theme.php'         // Theme functions
 ];
 
 foreach ($sage_includes as $file) {
