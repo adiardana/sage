@@ -17,11 +17,17 @@
         "scripts/customizer.js"
       ]
     },
+    "lib.js": {
+      "bower": ["underscore"]
+    },
     "flickity.js": {
       "bower": ["flickity"]
     },
     "fancybox.js": {
       "bower": ["fancyBox"]
+    },
+    "isotope.js": {
+      "bower": ["isotope"]
     }
   },
   "config": {
