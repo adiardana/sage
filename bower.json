@@ -18,6 +18,12 @@
         "./dist/isotope.pkgd.js"
       ]
     },
+    "outlayer": {
+      "main": [
+        "item.js",
+        "outlayer.js"
+      ]
+    },
     "flickity": {
       "main": [
         "./dist/flickity.css",
