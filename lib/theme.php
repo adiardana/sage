@@ -1,7 +1,7 @@
 <?php
 namespace Sage\Theme;
 
-function get_featured_image($id = false, $size = 'full') {
+function _get_featured_image($id = false, $size = 'full') {
   // if there is no id
   if (!$id) {
     return new \WP_Error( 'err', __( "Please specify the post ID", "sage" ) );
@@ -25,4 +25,41 @@ function get_featured_image($id = false, $size = 'full') {
 
   return $image;
 
+}
+
+function _get_excerpt($id = false, $max_char = 100) {
+  $post = null;
+  // if $id isn't defined
+  if (!$id) {
+    global $post;
+  }
+  // if $id isn't an object
+  if (!is_object($id)) {
+
+    if (intval($id) === 0) {
+      return new \WP_Error( 'err', __( "Invalid id", "sage" ) );
+    }
+
+    $post = get_post( intval($id) );
+
+  } elseif (is_object($id)) { // if $id is an object
+    $post = $id;
+  }
+
+  $excerpt = '';
+
+  if ($post->post_excerpt) {
+    $excerpt = substr($post->post_excerpt, 0, $max_char);
+  } else {
+    $excerpt = substr(strip_tags($post->post_content), 0, $max_char);
+  }
+
+  // check if last char isn't a space
+  if (substr($excerpt, -1) !== ' ') {
+    return $excerpt.'...';
+  }
+
+  $excerpt = substr($excerpt, 0, -1).'...';
+
+  return $excerpt;
 }
