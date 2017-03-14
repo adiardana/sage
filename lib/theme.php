@@ -36,6 +36,7 @@ function _get_excerpt($id = false, $max_char = 100) {
   // if $id isn't an object
   if (!is_object($id)) {
 
+    // check if id is valid integer
     if (intval($id) === 0) {
       return new \WP_Error( 'err', __( "Invalid id", "sage" ) );
     }
