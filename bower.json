@@ -10,9 +10,15 @@
     "bootstrap-sass": "3.3.6",
     "flickity": "^2.0.5",
     "fancyBox": "^3.0.39",
-    "isotope": "^3.0.3"
+    "isotope": "^3.0.3",
+    "underscore": "^1.8.3"
   },
   "overrides": {
+    "underscore": {
+      "main": [
+        "./underscore.js"
+      ]
+    },
     "isotope": {
       "main": [
         "./dist/isotope.pkgd.js"
