@@ -9,9 +9,15 @@
   "dependencies": {
     "bootstrap-sass": "3.3.6",
     "flickity": "^2.0.5",
-    "fancyBox": "^3.0.39"
+    "fancyBox": "^3.0.39",
+    "isotope": "^3.0.3"
   },
   "overrides": {
+    "isotope": {
+      "main": [
+        "./dist/isotope.pkgd.js"
+      ]
+    },
     "flickity": {
       "main": [
         "./dist/flickity.css",

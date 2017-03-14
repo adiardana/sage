@@ -100,8 +100,9 @@ function assets() {
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
-  // wp_enqueue_script('sage/lib', Assets\asset_path('scripts/flickity.js'), ['jquery'], null, true);
-  // wp_enqueue_script('sage/lib', Assets\asset_path('scripts/fancybox.js'), ['jquery'], null, true);
+  // wp_enqueue_script('sage/flickity', Assets\asset_path('scripts/flickity.js'), ['jquery'], null, true);
+  // wp_enqueue_script('sage/fancybox', Assets\asset_path('scripts/fancybox.js'), ['jquery'], null, true);
+  // wp_enqueue_script('sage/isotope', Assets\asset_path('scripts/isotope.js'), ['jquery'], null, true);
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

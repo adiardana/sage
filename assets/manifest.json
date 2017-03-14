@@ -22,6 +22,9 @@
     },
     "fancybox.js": {
       "bower": ["fancyBox"]
+    },
+    "isotope.js": {
+      "bower": ["isotope"]
     }
   },
   "config": {
