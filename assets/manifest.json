@@ -17,20 +17,11 @@
         "scripts/customizer.js"
       ]
     },
-    "lib.js": {
-      "bower": ["underscore"]
-    },
-    "flickity.js": {
-      "bower": ["flickity"]
-    },
-    "fancybox.js": {
-      "bower": ["fancyBox"]
-    },
-    "isotope.js": {
-      "bower": ["isotope"]
+    "jquery.js": {
+      "bower": ["jquery"]
     }
   },
   "config": {
-    "devUrl": "http://wp.dev"
+    "devUrl": "http://example.dev"
   }
 }

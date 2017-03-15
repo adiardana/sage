@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "lib.js": {
+      "bower": ["underscore"]
+    },
+    "flickity.js": {
+      "bower": ["flickity"]
+    },
+    "fancybox.js": {
+      "bower": ["fancyBox"]
+    },
+    "isotope.js": {
+      "bower": ["isotope"]
+    }
+  },
+  "config": {
+    "devUrl": "http://wp.dev"
+  }
+}
