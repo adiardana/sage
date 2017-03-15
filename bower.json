@@ -15,32 +15,30 @@
   },
   "overrides": {
     "underscore": {
-      "main": [
-        "./underscore.js"
-      ]
+      "main": ["./underscore.js"],
+      "dependencies": {}
     },
     "isotope": {
-      "main": [
-        "./dist/isotope.pkgd.js"
-      ]
+      "main": ["./dist/isotope.pkgd.js"],
+      "dependencies": {}
     },
     "outlayer": {
-      "main": [
-        "item.js",
-        "outlayer.js"
-      ]
+      "main": ["item.js", "outlayer.js"],
+      "dependencies": {}
     },
     "flickity": {
       "main": [
         "./dist/flickity.css",
         "./dist/flickity.pkgd.js"
-      ]
+      ],
+      "dependencies": {}
     },
     "fancyBox": {
       "main": [
         "./dist/jquery.fancybox.css",
         "./dist/jquery.fancybox.js"
-      ]
+      ],
+      "dependencies": {}
     },
     "bootstrap-sass": {
       "main": [
