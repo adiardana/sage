@@ -57,6 +57,7 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Primary', 'sage'),
     'id'            => 'sidebar-primary',
+    'description'   => 'Main sidebar area',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
@@ -66,6 +67,7 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
+    'description'   => 'Footer widget area',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
